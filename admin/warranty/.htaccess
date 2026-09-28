@@ -1,0 +1,5 @@
+# Extra layer on top of PHP session auth: nothing here should ever be
+# cached or indexed by search engines.
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>

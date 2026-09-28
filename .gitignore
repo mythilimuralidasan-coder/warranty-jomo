@@ -1,0 +1,12 @@
+# Secrets - never commit
+.env
+SERVICE_SHEET_SETUP.md
+
+# Customer-submitted files and server logs
+uploads/service-requests/
+mail_error.log
+webhook_debug.log
+webhook_success.log
+
+# OS files
+.DS_Store

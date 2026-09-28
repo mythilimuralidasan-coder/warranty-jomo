@@ -1,0 +1,6 @@
+# Prevent execution of any script inside the uploads directory
+<FilesMatch "\.(php|php\d?|phtml|pl|py|cgi|sh|asp|aspx)$">
+  Require all denied
+</FilesMatch>
+Options -Indexes -ExecCGI
+AddType text/plain .php .php3 .php4 .php5 .phtml .pl .py .cgi .sh .asp .aspx
